@@ -2,9 +2,9 @@
 <html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 
-    <title>The Siboro Institute</title>
-    <meta name="title" content="The Siboro Institute">
-    <meta name="description" content="The Siboro Institute">
+    <title>Siboro Institute</title>
+    <meta name="title" content="Siboro Institute">
+    <meta name="description" content="Siboro Institute">
 
     
         <meta name="viewport" content="user-scalable=yes, width=980">
@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://siboro.org/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://siboro.org/apple-touch-icon-precomposed.png">
 
-    <meta name="application-name" content="Netis">
+    <meta name="application-name" content="Siboro Institute">
     
     <link rel="alternate" href="http://siboro.org/" hreflang="x-default">
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
@@ -32,7 +32,7 @@
     
         
 
-<meta property="og:site_name" content="The Siboro Institute">
+<meta property="og:site_name" content="Siboro Institute">
 <meta property="og:type" content="website">
     
 <script type="text/javascript" charset="utf-8" async="" src="js/home.js"></script>
@@ -43,11 +43,26 @@
 <body style="">
 
 	<header id="global-header" class="global-header-dark">
-<?php
-require( "header.html" );
-?>        
+     
 	</header>
         
+<script>
+fetch("header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
+fetch("footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });        
+</script>
 
     <div class="main" role="main">
             
@@ -109,7 +124,7 @@ require( "header-topblock-noimage.html" );
                 
                 <p class="description">
                 Disusun oleh: P.A. Siboro<br />
-                Diterbitkan oleh: The Siboro Institute<br />
+                Diterbitkan oleh: Siboro Institute<br />
                 Dicetak oleh:<br />
                 
                 
@@ -122,13 +137,6 @@ require( "header-topblock-noimage.html" );
                 Pesan buku: <a href="">edisi cetak</a> | <a href="">edisi iOS</a>
                 </p>
                 
-                <!--<p class="link"><a href="http://institute.siboro.org/more/rationale.html">Read further</a></p>-->
-
-<!--
-                <div class="span6 case-studies">
-                    <p><a href="http://siboro.org/customers/"> <img src="img/casestudies.jpg" width="440" height="136"> <span class="link">See case studies</span> </a></p>
-                </div>
--->
                 <div class="span6">
                 
                 <!-- Quotes -->
@@ -320,30 +328,13 @@ require( "header-topblock-noimage.html" );
             <p></p>
             <p></p>
 
-<!--
-            <section class="b-row four last">
-                <div class="span6">
-                    <h2 class="heading">Tightly integrated modules</h2>
-<p class="description">Modules in Netis are highly integrated with each other in order to provide the organization the best result for your organization.</p>
-<p class="link"><a href="http://siboro.org/more/integrated.html">Read further</a></p>
-                </div>
-                
-                <div class="span6">
-                    <img alt="Invoicing software" data-hisrc="" src="img/tightintegration.jpg" data-2x="tightintegration.jpg">
-                </div>
-                
-            </section>
-            -->
             
         </div>
     </div>
 <!-- /Features -->
 
         </div>
-
-<?php
-require( "footer.html" );
-?>        
+     
         
 
 <!-- This base.js is needed among others for dropdown "More" menu on top -->

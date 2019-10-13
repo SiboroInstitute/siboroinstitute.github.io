@@ -2,9 +2,9 @@
 <html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 
-    <title>Netis - Integrated Human Capital Management</title>
-    <meta name="title" content="Netis - Integrated Human Capital Management">
-    <meta name="description" content="Netis - Integrated Human Capital Management. Try Netis Integrated Human Capital Management software for free!">
+    <title>Siboro Institute</title>
+    <meta name="title" content="Siboro Institute">
+    <meta name="description" content="Siboro Institute - To make man whole">
 
     
         <meta name="viewport" content="user-scalable=yes, width=980">
@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://siboro.org/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://siboro.org/apple-touch-icon-precomposed.png">
 
-    <meta name="application-name" content="Netis">
+    <meta name="application-name" content="Siboro Institute">
     
     <link rel="alternate" href="http://siboro.org/" hreflang="x-default">
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
@@ -46,7 +46,7 @@
     
         <meta name="twitter:description" content="Netis - Integrated Human Capital Management web-based softaware. Free Trial.">
     
-        <meta name="twitter:image" content="http://www.netishr.com">
+        <meta name="twitter:image" content="http://institute.siboro.org">
     
     <meta name="twitter:player" content="https://player.vimeo.com/video/51563083">
     <meta name="twitter:player:width" content="699">
@@ -65,35 +65,29 @@
 
 <body style="">
 
-            <header id="global-header" class="global-header-dark">
-<?php
-require( "header.html" );
-?>        
+            <header id="global-header" class="global-header-dark">     
             </header>
         
 
         <div class="main" role="main">
             
     <div class="hero ">
-        <div class="b-container">
-            <div class="heading-wrapper">
-                <h1 class="heading">Integrated Human Capital Management</h1>
-                <a class="cta-button" href="http://siboro.org/more/freetrial.html">Try Netis free</a>
-            </div>
+        	<div class="b-container">
+            	<div class="heading-wrapper">
+                	<h1 class="heading">Siboro Institute</h1>
+            	</div>
 
 
-<!-- Carousel -->
+				<!-- Carousel -->
 
-            <div id="hero-carousel" class="carousel slide ">
+            	<div id="hero-carousel" class="carousel slide ">
             
             
-            <!-- Carousel Inner -->
+            		<!-- Carousel Inner -->
             
-                            <div class="carousel-inner">
-                            <img src="img/netis-mainpage.jpg">
-                            
-
-                            </div>
+	        		<div class="carousel-inner">
+                		<a href="http://institute.siboro.org"><img src="img/mainpage.jpg"></a>
+					</div>
                             
                 
 <!-- /Carousel Inner -->
@@ -111,7 +105,7 @@ require( "header.html" );
                     </span>
                 </button>
 
-                <div class="carousel-indicators">
+                	<div class="carousel-indicators">
                     
                         <button type="button" class="indicator active" data-target="#hero-carousel" data-slide-to="0"></button>
                     
@@ -119,31 +113,12 @@ require( "header.html" );
                     
                         <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="2"></button>
                     
-                </div>
+                	</div>
 -->
 
-            </div>
+            	</div>
             
-            
-<!--
-            <div class="app-links">
-                <a class="button" href="https://itunes.apple.com/app/netishr/app" target="_blank">
-                    <span class="circle">
-                        <span class="logo logo-iphone"></span>
-                    </span>
-                    Download our
-                    <strong>iPhone App</strong>
-                </a>
-
-                <a class="button" href="https://play.google.com/store/apps/details?id=com.netishr.touch" target="_blank">
-                    <span class="circle">
-                        <span class="logo logo-android"></span>
-                    </span>
-                    Download our
-                    <strong>Android App</strong>
-                </a>
-            </div>
-            -->
+        
             
             
             <!-- /Carousel -->
@@ -368,9 +343,8 @@ require( "header.html" );
 
         </div>
 
-<?php
-require( "footer.html" );
-?>        
+ <footer>
+</footer>        
         
 
 <!-- This base.js is needed among others for dropdown "More" menu on top -->

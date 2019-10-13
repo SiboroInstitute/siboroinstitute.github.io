@@ -2,9 +2,9 @@
 <html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 
-    <title>The Siboro Institute</title>
-    <meta name="title" content="The Siboro Institute">
-    <meta name="description" content="The Siboro Institute">
+    <title>Siboro Institute</title>
+    <meta name="title" content="Siboro Institute">
+    <meta name="description" content="Siboro Institute">
 
     
         <meta name="viewport" content="user-scalable=yes, width=980">
@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://siboro.org/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://siboro.org/apple-touch-icon-precomposed.png">
 
-    <meta name="application-name" content="Netis">
+    <meta name="application-name" content="Siboro Institute">
     
     <link rel="alternate" href="http://siboro.org/" hreflang="x-default">
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
@@ -32,7 +32,7 @@
     
         
 
-<meta property="og:site_name" content="The Siboro Institute">
+<meta property="og:site_name" content="Siboro Institute">
 <meta property="og:type" content="website">
     
 <script type="text/javascript" charset="utf-8" async="" src="js/home.js"></script>
@@ -42,21 +42,85 @@
 
 <body style="">
 
-	<header id="global-header" class="global-header-dark">
-<?php
-require( "header.html" );
-?>        
+	<header id="global-header" class="global-header-dark">      
 	</header>
-        
+    
+<script>
+fetch("header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
+fetch("footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });        
+</script>
 
     <div class="main" role="main">
             
     	<div class="hero ">
     	
   
-<?php
-require( "header-topblock-noimage.html" );
-?>    	
+
+        	<div class="b-container">
+            	<div class="heading-wrapper">
+                	<h1 class="heading">Siboro Institute</h1>
+            	</div>
+
+
+				<!-- Carousel -->
+
+            	<div id="hero-carousel" class="carousel slide ">
+            
+            
+            		<!-- Carousel Inner -->
+            
+	        		<div class="carousel-inner">
+                		<a href="http://institute.siboro.org"><img src="img/mainpage.jpg"></a>
+					</div>
+                            
+                
+<!-- /Carousel Inner -->
+
+<!--
+                <button type="button" class="left carousel-control" data-target="#hero-carousel" data-slide="prev">
+                    <span class="target">
+                        <span class="arrow"></span>
+                    </span>
+                </button>
+
+                <button type="button" class="right carousel-control" data-target="#hero-carousel" data-slide="next">
+                    <span class="target">
+                        <span class="arrow"></span>
+                    </span>
+                </button>
+
+                	<div class="carousel-indicators">
+                    
+                        <button type="button" class="indicator active" data-target="#hero-carousel" data-slide-to="0"></button>
+                    
+                        <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="1"></button>
+                    
+                        <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="2"></button>
+                    
+                	</div>
+-->
+
+            	</div>
+            
+            
+            <!-- /Carousel -->
+            
+        </div>
+            
+            
 
 
     </div>
@@ -108,9 +172,18 @@ require( "header-topblock-noimage.html" );
                 <h2 class="heading">About Us</h2>
                 
                 <p class="description">
-                The Siboro Institute is a not-for-profit institution set up during 50th wedding anniversary of P. A. Siboro and L.N. Sitorus in May 2013.</p>
+                Siboro Institute is a not-for-profit institution set up during 50th wedding anniversary of P. A. Siboro and L.N. Sitorus in May 2013.</p>
                 
-                <!--<p class="link"><a href="http://institute.siboro.org/more/rationale.html">Read further</a></p>-->
+                <p>Siboro Institute is set up to contribute to the public by its philosophy, i.e., "to make man whole".
+                    
+                    This is expressed more fully in these words of America’s most translated writer, Ellen G. White, about education:
+                    
+                    "True education means more than the pursual of a certain course of study. It means more than a preparation for the life that now is. It has to do with the whole being, and with the whole period of existence possible to man. It is the harmonious development of the physical, the mental, and the spiritual powers. It prepares the student for the joy of service in this world and for the higher joy of wider service in the world to come." (Ellen G. White, Education, 1903, Chapter 1)</p>
+                    
+                    <p>Herbert Spencer, 19th century British philosopher, in his book "Education: intellectual, moral, and physical" asked a probing question "What knowledge is of most worth?" to which he answered science. Ellen G. White, on the other hand, stated that the knowledge that makes man whole is of most worth. We at Siboro Institute is working on various avenues to harmoniously develop the physical, mental and spiritual powers of the people. Physical education is education of the body. Mental education is education of the mind. Spiritual education is education of the heart. Physical, mental and spiritual powers are, however, affecting each other and inseparable.
+                    </p>
+                    
+                     <p>Siboro Institute currently focuses its activities toward Indonesians or Indonesian language speakers, which is world’s fourth largest population. Siboro Institute based its activities on the concept of balanced and harmonious development of human’s physical, mental and spiritual powers, which will nurture its social well-being.</p>
 
 <!--
                 <div class="span6 case-studies">
@@ -271,72 +344,17 @@ require( "header-topblock-noimage.html" );
                 </div>
             </section>
 
-<!--
-            <section class="b-row two">
-                <div class="span6">
-                    <h2 class="heading">Simple, Natural Healing</h2>
-<p class="description">Our body is equipped with self-healing powers, and nature has substances to the process.</p>
-<p class="link"><a href="http://siboro.org/more/byhrcompany.html">Read further</a></p>
-                </div>
-                
-                <div class="span6">
-                    <img alt="Simple, Natural Healing" data-hisrc="" src="img/hrcompany.jpg" data-2x="img/hrcompany.jpg">
-                    <a href="http://arangobatajaib.org">ArangObatAjaib</a><br />
-                    <a href="http://artihidupku.com">ArtiHidupku<a/><br />
-                    <a href="http://bebasdarisakit.info">BebasDariSakit</a><br />
-                </div>
-                
-            </section>
-            
-
-            <section class="b-row three last">
-                <div class="span6">
-                    <h2 class="heading">Book Publishing</h2>
-<p class="description">We publish books for the harmonious development of all aspects of human beings.</p>
-                </div>
-                
-                <div class="span6">
-                    
-                    <img alt="Book Publishing" data-hisrc="" height="200" src="img/hrbestpractice.jpg" data-2x="img/hrbestpractice.jpg">
-                    <a href="http://institute.siboro.org/pub-arang.html">Arang Aktif</a><br />
-                    <a href="http://institute.siboro.org/pub-ceritanak.html">Koleksi Cerita Anak<a/><br />
-                    <a href="http://institute.siboro.org/pub-ceritaalkitab.html">Cerita ALKITAB<a/><br />
-                    <a href="http://institute.siboro.org/pub-medicalministry.html">Medical Ministry</a><br />
-                    <a href="http://institute.siboro.org/pub-perawatmisi.html">Perawat Misi</a><br />
-                    
-                </div>
-                
-            </section>
--->
             
             <p></p>
             <p></p>
 
-<!--
-            <section class="b-row four last">
-                <div class="span6">
-                    <h2 class="heading">Tightly integrated modules</h2>
-<p class="description">Modules in Netis are highly integrated with each other in order to provide the organization the best result for your organization.</p>
-<p class="link"><a href="http://siboro.org/more/integrated.html">Read further</a></p>
-                </div>
-                
-                <div class="span6">
-                    <img alt="Invoicing software" data-hisrc="" src="img/tightintegration.jpg" data-2x="tightintegration.jpg">
-                </div>
-                
-            </section>
-            -->
             
         </div>
     </div>
 <!-- /Features -->
 
         </div>
-
-<?php
-require( "footer.html" );
-?>        
-        
+  
 
 <!-- This base.js is needed among others for dropdown "More" menu on top -->
     <script src="js/base.js"></script>

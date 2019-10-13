@@ -722,7 +722,7 @@
 }
 .hero .carousel .carousel-control.left .arrow { background-position: 0 0 }
 .hero .carousel .carousel-control.right .arrow { background-position: -32px 0 }
-.hero .mobile-video .xvideo-start-frame { background: url(../img/netis-mainpage.jpg) }
+.hero .mobile-video .xvideo-start-frame { background: url(../img/mainpage.jpg) }
 .hero .mobile-video .logo { display: inline-block }
 .hero .mobile-video .logo-iphone {
     width: 15px;
