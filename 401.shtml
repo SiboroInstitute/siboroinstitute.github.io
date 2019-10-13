@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <title>Netis - Integrated Human Capital Management</title>
+    <meta name="title" content="Netis - Integrated Human Capital Management">
+    <meta name="description" content="Netis - Integrated Human Capital Management. Try Netis Integrated Human Capital Management software for free!">
+
+    
+        <meta name="viewport" content="user-scalable=yes, width=980">
+    
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/home.css">
+
+
+    <link rel="shortcut icon" href="http://netishr.com/favicon.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://netishr.com/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://netishr.com/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://netishr.com/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://netishr.com/apple-touch-icon-precomposed.png">
+
+    <meta name="application-name" content="Netis">
+    
+    <link rel="alternate" href="http://netishr.com/" hreflang="x-default">
+    <link rel="alternate" href="http://netishr.com/jp/" hreflang="ja-jp">
+    <link rel="alternate" href="http://netishr.com/" hreflang="en-uk">
+    <link rel="alternate" href="http://netishr.com/" hreflang="en-us">
+
+    <meta name="msvalidate.01" content="172A75EAA5C9D028CFE02B0E4079A98B">
+
+    
+        
+
+<meta property="og:site_name" content="Netis - Integrated Human Capital Management">
+<meta property="og:type" content="website">
+
+
+    <meta property="og:image" content="http://netishr.com/img/logos/logo-opengraph.png">
+
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site:id" content="14273403">
+
+    
+        <meta name="twitter:title" content="Online Accounting Software. Free Trial, Free Support">
+    
+        <meta name="twitter:description" content="Netis - Integrated Human Capital Management web-based softaware. Free Trial.">
+    
+        <meta name="twitter:image" content="http://www.netishr.com">
+    
+    <meta name="twitter:player" content="https://player.vimeo.com/video/51563083">
+    <meta name="twitter:player:width" content="699">
+    <meta name="twitter:player:height" content="391">
+
+    
+    
+        <meta name="twitter:player:stream" content="https://player.vimeo.com/external/58937953.sd.mp4?s=5e238e1f014a1f486d4cfd26f91e8d6d">
+    
+        <meta name="twitter:player:stream:content_type" content="video/mp4">
+    
+<script type="text/javascript" charset="utf-8" async="" src="js/home.js"></script>
+    
+
+</head>
+
+<body style="">
+
+            <header id="global-header" class="global-header-dark">
+<?php
+require( "header.html" );
+?>        
+            </header>
+        
+
+        <div class="main" role="main">
+            
+    <div class="hero ">
+        <div class="b-container">
+            <div class="heading-wrapper">
+                <h1 class="heading">Integrated Human Capital Management</h1>
+                <a class="cta-button" href="http://netishr.com/more/freetrial.html">Try Netis free</a>
+            </div>
+
+
+<!-- Carousel -->
+
+            <div id="hero-carousel" class="carousel slide ">
+            
+            
+            <!-- Carousel Inner -->
+            
+                            <div class="carousel-inner">
+                            <img src="img/netis-mainpage.jpg">
+                            
+
+                            </div>
+                            
+                
+<!-- /Carousel Inner -->
+
+<!--
+                <button type="button" class="left carousel-control" data-target="#hero-carousel" data-slide="prev">
+                    <span class="target">
+                        <span class="arrow"></span>
+                    </span>
+                </button>
+
+                <button type="button" class="right carousel-control" data-target="#hero-carousel" data-slide="next">
+                    <span class="target">
+                        <span class="arrow"></span>
+                    </span>
+                </button>
+
+                <div class="carousel-indicators">
+                    
+                        <button type="button" class="indicator active" data-target="#hero-carousel" data-slide-to="0"></button>
+                    
+                        <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="1"></button>
+                    
+                        <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="2"></button>
+                    
+                </div>
+-->
+
+            </div>
+            
+            
+<!--
+            <div class="app-links">
+                <a class="button" href="https://itunes.apple.com/app/netishr/app" target="_blank">
+                    <span class="circle">
+                        <span class="logo logo-iphone"></span>
+                    </span>
+                    Download our
+                    <strong>iPhone App</strong>
+                </a>
+
+                <a class="button" href="https://play.google.com/store/apps/details?id=com.netishr.touch" target="_blank">
+                    <span class="circle">
+                        <span class="logo logo-android"></span>
+                    </span>
+                    Download our
+                    <strong>Android App</strong>
+                </a>
+            </div>
+            -->
+            
+            
+            <!-- /Carousel -->
+            
+        </div>
+    </div>
+
+    
+<!-- Featured links -->
+<!--
+    <div class="featured-links">
+        <div class="b-container">
+            <div class="b-row">
+                <div class="span4 one">
+                    <a href="http://netishr.com/">
+
+<img alt="" data-hisrc="" width="180" height="90" src="img/trio-smallbusinesses-2x.png" data-2x="img/trio-smallbusinesses-2x.png">
+
+    <b>For small businesses</b>
+    Feature tour
+</a>
+                </div>
+                <div class="span4 two">
+                    <a href="http://netishr.com/" >
+
+<img alt="" data-hisrc="" width="180" height="90" src="img/trio-partners-2x.png" data-2x="img/trio-partners-2x.png">
+
+    <b>For consultants</b>
+    Partner with us
+</a>
+                </div>
+                <div class="span4 three">
+                    <a href="http://netishr.com/pricing/">
+
+<img alt="" data-hisrc="" width="180" height="90" src="img/trio-plans-2x.png" data-2x="img/trio-plans-2x.png">
+
+    <b>Plans from $$$/month</b>
+    See pricing
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+<!-- /Featured links -->
+
+
+<!-- Features -->
+    <div class="features">
+        <div class="b-container">
+            <section class="b-row one">
+                <h2 class="heading">401 Authorization Required</h2>
+                
+                <p class="description">
+                Invalid login credentials.</p>
+                
+
+<!--
+                <div class="span6 case-studies">
+                    <p><a href="http://netishr.com/customers/"> <img src="img/casestudies.jpg" width="440" height="136"> <span class="link">See case studies</span> </a></p>
+                </div>
+-->
+                <div class="span6">
+                
+                <!-- Quotes -->
+<!--
+                    <div id="quotes-carousel" class="carousel carousel-fade slide">
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <a class="quote" href="files/1229" target="_blank">
+
+                                    <figure>
+                                        <blockquote cite="files/1229">
+                                            <p>
+                                                Description 1.
+                                            </p>
+                                        </blockquote>
+
+                                        <figcaption class="link">
+                                            Name 1
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            
+        <div class="item">
+            <a class="quote" href="files/342015252193505280" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/342015252193505280">
+                        <p>
+                             Description 2.
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 2
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+        <div class="item">
+            <a class="quote" href="files/341701054204891137" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/341701054204891137">
+                        <p>
+                            Description 3
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 3
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+        <div class="item active">
+            <a class="quote" href="files/3369" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/3369">
+                        <p>
+                            Description 4
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 4
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+        <div class="item">
+            <a class="quote" href="files/363098622616809472" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/363098622616809472">
+                        <p>
+                            Description 5.
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 5
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+        <div class="item">
+            <a class="quote" href="files/363401481091035136" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/363401481091035136">
+                        <p>
+                            Description 6
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 6
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+        <div class="item">
+            <a class="quote" href="files/353325967495802880" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/353325967495802880">
+                        <p>
+                            Description 7.
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 7
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+        <div class="item">
+            <a class="quote" href="files/360004246042705920" target="_blank">
+
+                <figure>
+                    <blockquote cite="files/360004246042705920">
+                        <p>
+                            Description 8.
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="link">
+                        Name 8
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    
+
+
+
+
+                        </div>
+                    </div>
+-->
+                <!-- /Quotes -->
+                </div>
+            </section>
+
+ 
+            
+        </div>
+    </div>
+<!-- /Features -->
+
+        </div>
+
+<?php
+require( "footer.html" );
+?>        
+        
+
+<!-- This base.js is needed among others for dropdown "More" menu on top -->
+    <script src="js/base.js"></script>
+
+<!-- footer scripts here -->
+
+
+</body></html>
