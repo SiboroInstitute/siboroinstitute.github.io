@@ -307,6 +307,7 @@
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 .carousel-caption .btn { text-shadow: none }
+/*
 @media screen and (min-width:768px) { 
 	.carousel-control .icon-prev,
 	.carousel-control .icon-next {
@@ -323,6 +324,8 @@
 	}
 	.carousel-indicators { bottom: 20px }
 }
+*/
+
 .fade {
     opacity: 0;
     -webkit-transition: opacity .15s linear;
@@ -886,6 +889,8 @@
     border-bottom: 1px solid #444A52;
     margin-left: 3px;
 }
+
+/*
 @media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2 / 1),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx) { 
 	.region-uk .promo-bar a {
 	    background: url(/media/446263/xerocon-uk-2x.png) 0 no-repeat;
@@ -896,6 +901,7 @@
 	    background-size: 161px 55px;
 	}
 }
+*/
 
 
 /* For responsiveness, see https://catswhocode.com/how-to-make-a-responsive-website/ */
