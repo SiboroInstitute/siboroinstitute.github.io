@@ -896,3 +896,17 @@
 	    background-size: 161px 55px;
 	}
 }
+
+
+/* For responsiveness, see https://catswhocode.com/how-to-make-a-responsive-website/ */
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
