@@ -1,1 +1,1 @@
-# **The Siboro Instite Page**
+# **The Siboro Institute Page**
