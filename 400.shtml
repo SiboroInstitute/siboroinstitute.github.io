@@ -2,9 +2,9 @@
 <html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 
-    <title>Siboro Institute</title>
-    <meta name="title" content="Siboro Institute">
-    <meta name="description" content="Siboro Institute - To make man whole">
+    <title>The Siboro Institute</title>
+    <meta name="title" content="The Siboro Institute">
+    <meta name="description" content="The Siboro Institute - To make man whole">
 
     
         <meta name="viewport" content="user-scalable=yes, width=980">
@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://siboro.org/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://siboro.org/apple-touch-icon-precomposed.png">
 
-    <meta name="application-name" content="Siboro Institute">
+    <meta name="application-name" content="The Siboro Institute">
     
     <link rel="alternate" href="http://siboro.org/" hreflang="x-default">
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
@@ -96,7 +96,7 @@ fetch("footer.html")
     <div class="hero ">
         	<div class="b-container">
             	<div class="heading-wrapper">
-                	<h1 class="heading">Siboro Institute</h1>
+                	<h1 class="heading">The Siboro Institute</h1>
             	</div>
 
 
