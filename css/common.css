@@ -195,14 +195,23 @@ table {
 }
 .b-row:after { clear: both }
 [class*=span] {
-    float: left;
-    min-height: 1px;
-    margin-left: 20px;
+  float: left;
+  min-height: 1px;
+  margin-left: 2%;
+  width: 100%;
+  box-sizing: border-box;
 }
 .b-container,
 .navbar-static-top .b-container,
 .navbar-fixed-top .b-container,
-.navbar-fixed-bottom .b-container { width: 940px }
+.navbar-fixed-bottom .b-container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .b-container { margin: 0 auto }
 .span-right { float: right }
 .span12 { width: 940px }
@@ -2167,14 +2176,14 @@ h6 {
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
 	#region-bar .flag-int { background-image: url(../img/region-bar/sprite-2x.png) }
 }
-#region-bar .select2-choice div b {
+#region-bar .select2-choice div {
     background-repeat: no-repeat;
     background-position: -160px 0;
     background-image: url(../img/region-bar/sprite.png);
     background-size: 224px 32px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	#region-bar .select2-choice div b { background-image: url(../img/region-bar/sprite-2x.png) }
+	#region-bar .select2-choice div { background-image: url(../img/region-bar/sprite-2x.png) }
 }
 #region-bar .select2-choice:hover div b { background-position: -192px 0 }
 #region-bar .close-button {
