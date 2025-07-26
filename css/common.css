@@ -14,8 +14,6 @@ audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 audio:not([controls]) {
     display: none;
@@ -135,7 +133,6 @@ legend {
     border: 0;
     padding: 0;
     white-space: normal;
-    *margin-left: -7px;
 }
 button,
 input,
@@ -144,7 +141,6 @@ textarea {
     font-size: 100%;
     margin: 0;
     vertical-align: baseline;
-    *vertical-align: middle;
 }
 button,
 input { line-height: normal }
@@ -156,7 +152,6 @@ input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
     cursor: pointer;
-    *overflow: visible;
 }
 button[disabled],
 html input[disabled] { cursor: default }
@@ -166,8 +161,6 @@ input[type=radio] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-    *height: 13px;
-    *width: 13px;
 }
 input[type=search] {
     -webkit-appearance: textfield;
@@ -261,7 +254,6 @@ table {
     box-sizing: border-box;
     float: left;
     margin-left: 2.127659574468085%;
-    *margin-left: 2.074468085106383%;
 }
 .b-row-fluid [class*=span]:first-child { margin-left: 0 }
 .b-row-fluid .controls-row [class*=span]+[class*=span] { margin-left: 2.127659574468085% }
@@ -1793,6 +1785,7 @@ h6 {
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
 	#global-footer.global-footer-light .select2-container .select2-choice div b { background-image: url(../img/global-nav-sprite-2x.png) }
 }
+}
 .global-nav-dark { background: #45474d }
 #global-footer.global-footer-dark {
     background: #45474d;
@@ -2201,4 +2194,46 @@ h6 {
 	.enableFluid #region-bar .small-left { width: 80% }
 	.enableFluid #region-bar .small-right { width: 20% }
 	.enableFluid #region-bar .text { display: none }
+}
+
+/* Responsive styles */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+.container, .main, .content, .wrapper {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+  .container, .main, .content, .wrapper {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1em; }
+  nav, .sidebar {
+    display: none;
+  }
+  .container, .main, .content, .wrapper {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+  h1 { font-size: 1.2em; }
+  h2 { font-size: 1em; }
+  h3 { font-size: 0.9em; }
 }
