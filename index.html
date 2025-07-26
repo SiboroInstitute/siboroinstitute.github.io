@@ -5,12 +5,11 @@
     <title>The Siboro Institute</title>
     <meta name="title" content="The Siboro Institute">
     <meta name="description" content="The Siboro Institute">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
 
-
-    <link rel="stylesheet" href="css/common.css">
+    
+        <meta name="viewport" content="user-scalable=yes, width=980">
+    
+<link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/home.css">
 
 
@@ -38,28 +37,29 @@
     
 <script type="text/javascript" charset="utf-8" async="" src="js/home.js"></script>
     
+<!-- For responsiveness, see https://catswhocode.com/how-to-make-a-responsive-website/ -->
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
 
 </head>
 
 <body style="">
 
 	<header id="global-header" class="global-header-dark">
-  <div class="global-header-container">
-    <div class="global-header-left">
-      <span class="global-header-tagline">The Siboro Institute</span>
-    </div>
-    <nav class="global-header-links global-header-right">
-      <ul>
-        <li class="global-header-highlight">
-          <a class="global-header-main-link" href="/">Home</a>
-          <a class="global-header-main-link" href="/aboutus.html">About Us</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+     
+	</header>
  
 <script>
+fetch("header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
 fetch("footer.html")
   .then(response => {
     return response.text()

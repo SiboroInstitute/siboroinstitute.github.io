@@ -14,6 +14,8 @@ audio,
 canvas,
 video {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 audio:not([controls]) {
     display: none;
@@ -133,6 +135,7 @@ legend {
     border: 0;
     padding: 0;
     white-space: normal;
+    *margin-left: -7px;
 }
 button,
 input,
@@ -141,6 +144,7 @@ textarea {
     font-size: 100%;
     margin: 0;
     vertical-align: baseline;
+    *vertical-align: middle;
 }
 button,
 input { line-height: normal }
@@ -152,6 +156,7 @@ input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
     cursor: pointer;
+    *overflow: visible;
 }
 button[disabled],
 html input[disabled] { cursor: default }
@@ -161,6 +166,8 @@ input[type=radio] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
+    *height: 13px;
+    *width: 13px;
 }
 input[type=search] {
     -webkit-appearance: textfield;
@@ -195,59 +202,45 @@ table {
 }
 .b-row:after { clear: both }
 [class*=span] {
-  float: left;
-  min-height: 1px;
-  margin-left: 2%;
-  width: 100%;
-  box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
 }
 .b-container,
 .navbar-static-top .b-container,
 .navbar-fixed-top .b-container,
-.navbar-fixed-bottom .b-container {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 16px;
-  padding-right: 16px;
-}
+.navbar-fixed-bottom .b-container { width: 940px }
 .b-container { margin: 0 auto }
 .span-right { float: right }
-.span12, .span11, .span10, .span9, .span8, .span7, .span6, .span5, .span4, .span3, .span2, .span1 {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-@media (min-width: 992px) {
-  .span12 { width: 100%; max-width: 940px; }
-  .span11 { width: 91.5%; max-width: 860px; }
-  .span10 { width: 83%; max-width: 780px; }
-  .span9 { width: 74.5%; max-width: 700px; }
-  .span8 { width: 66%; max-width: 620px; }
-  .span7 { width: 57.5%; max-width: 540px; }
-  .span6 { width: 49%; max-width: 460px; }
-  .span5 { width: 40.5%; max-width: 380px; }
-  .span4 { width: 32%; max-width: 300px; }
-  .span3 { width: 23.5%; max-width: 220px; }
-  .span2 { width: 15%; max-width: 140px; }
-  .span1 { width: 6.5%; max-width: 60px; }
-}
-.b-container, .navbar-static-top .b-container, .navbar-fixed-top .b-container, .navbar-fixed-bottom .b-container {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-@media (max-width: 991px) {
-  .b-container, .navbar-static-top .b-container, .navbar-fixed-top .b-container, .navbar-fixed-bottom .b-container {
-    max-width: 100vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
-}
+.span12 { width: 940px }
+.span11 { width: 860px }
+.span10 { width: 780px }
+.span9 { width: 700px }
+.span8 { width: 620px }
+.span7 { width: 540px }
+.span6 { width: 460px }
+.span5 { width: 380px }
+.span4 { width: 300px }
+.span3 { width: 220px }
+.span2 { width: 140px }
+.span1 { width: 60px }
+.b-row.tight { padding-left: 20px }
+.b-row.tight [class*=span] { margin-left: 0 }
+.b-row.tight .span6 { width: 470px }
+.b-row.tight .span4 { width: 313px }
+.b-row.tight .span3 { width: 235px }
+.offset12 { margin-left: 980px }
+.offset11 { margin-left: 900px }
+.offset10 { margin-left: 820px }
+.offset9 { margin-left: 740px }
+.offset8 { margin-left: 660px }
+.offset7 { margin-left: 580px }
+.offset6 { margin-left: 500px }
+.offset5 { margin-left: 420px }
+.offset4 { margin-left: 340px }
+.offset3 { margin-left: 260px }
+.offset2 { margin-left: 180px }
+.offset1 { margin-left: 100px }
 .b-row-fluid {
     width: 100%;
     *zoom: 1;
@@ -268,6 +261,7 @@ table {
     box-sizing: border-box;
     float: left;
     margin-left: 2.127659574468085%;
+    *margin-left: 2.074468085106383%;
 }
 .b-row-fluid [class*=span]:first-child { margin-left: 0 }
 .b-row-fluid .controls-row [class*=span]+[class*=span] { margin-left: 2.127659574468085% }
@@ -1799,7 +1793,6 @@ h6 {
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
 	#global-footer.global-footer-light .select2-container .select2-choice div b { background-image: url(../img/global-nav-sprite-2x.png) }
 }
-}
 .global-nav-dark { background: #45474d }
 #global-footer.global-footer-dark {
     background: #45474d;
@@ -2181,14 +2174,14 @@ h6 {
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
 	#region-bar .flag-int { background-image: url(../img/region-bar/sprite-2x.png) }
 }
-#region-bar .select2-choice div {
+#region-bar .select2-choice div b {
     background-repeat: no-repeat;
     background-position: -160px 0;
     background-image: url(../img/region-bar/sprite.png);
     background-size: 224px 32px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	#region-bar .select2-choice div { background-image: url(../img/region-bar/sprite-2x.png) }
+	#region-bar .select2-choice div b { background-image: url(../img/region-bar/sprite-2x.png) }
 }
 #region-bar .select2-choice:hover div b { background-position: -192px 0 }
 #region-bar .close-button {
@@ -2208,46 +2201,4 @@ h6 {
 	.enableFluid #region-bar .small-left { width: 80% }
 	.enableFluid #region-bar .small-right { width: 20% }
 	.enableFluid #region-bar .text { display: none }
-}
-
-/* Responsive styles */
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-}
-body, html {
-  width: 100%;
-  overflow-x: hidden;
-}
-.container, .main, .content, .wrapper {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (max-width: 1024px) {
-  body {
-    font-size: 1rem;
-  }
-  .container, .main, .content, .wrapper {
-    padding: 0 10px;
-  }
-}
-@media (max-width: 768px) {
-  h1 { font-size: 1.5em; }
-  h2 { font-size: 1.2em; }
-  h3 { font-size: 1em; }
-  nav, .sidebar {
-    display: none;
-  }
-  .container, .main, .content, .wrapper {
-    padding: 0 5px;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    font-size: 0.95rem;
-  }
-  h1 { font-size: 1.2em; }
-  h2 { font-size: 1em; }
-  h3 { font-size: 0.9em; }
 }
