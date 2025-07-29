@@ -20,6 +20,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/3.12.0/modernizr.min.js"></script>
     <!-- RequireJS CDN for AMD modules -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <!-- Configure RequireJS to use CDN jQuery -->
+    <script>
+      require.config({
+        paths: {
+          'jquery': 'https://code.jquery.com/jquery-3.7.1.min'
+        }
+      });
+    </script>
     <link rel="shortcut icon" href="http://siboro.org/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://siboro.org/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://siboro.org/apple-touch-icon-114x114-precomposed.png">
