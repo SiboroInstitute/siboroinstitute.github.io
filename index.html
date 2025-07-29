@@ -1,401 +1,175 @@
 <!DOCTYPE html>
-<html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en-us" class="global-nav-dark region-us js no-touch hashchange cssanimations csstransforms csstransitions cors">
+<head>
     <meta charset="utf-8">
-
     <title>The Siboro Institute</title>
     <meta name="title" content="The Siboro Institute">
     <meta name="description" content="The Siboro Institute">
-
-    
-        <meta name="viewport" content="user-scalable=yes, width=980">
-    
-<link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/home.css">
-
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="application-name" content="The Siboro Institute">
+    <meta name="msvalidate.01" content="172A75EAA5C9D028CFE02B0E4079A98B">
+    <meta property="og:site_name" content="The Siboro Institute">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="http://siboro.org/favicon.png">
-
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://siboro.org/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://siboro.org/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://siboro.org/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://siboro.org/apple-touch-icon-precomposed.png">
-
-    <meta name="application-name" content="The Siboro Institute">
-    
     <link rel="alternate" href="http://siboro.org/" hreflang="x-default">
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
     <link rel="alternate" href="http://siboro.org/" hreflang="en-uk">
     <link rel="alternate" href="http://siboro.org/" hreflang="en-us">
-
-    <meta name="msvalidate.01" content="172A75EAA5C9D028CFE02B0E4079A98B">
-
-    
-        
-
-<meta property="og:site_name" content="The Siboro Institute">
-<meta property="og:type" content="website">
-    
-<script type="text/javascript" charset="utf-8" async="" src="js/home.js"></script>
-    
-<!-- For responsiveness, see https://catswhocode.com/how-to-make-a-responsive-website/ -->
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-
-
+    <script src="js/home.js" async></script>
 </head>
+<body>
 
-<body style="">
-
-	<header id="global-header" class="global-header-dark">
+    <header id="global-header" class="global-header-dark">
      
-	</header>
+    </header>
  
 <script>
-fetch("header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header").innerHTML = data;
-  });
-
-fetch("footer.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("footer").innerHTML = data;
-  });        
-</script>
+// Dynamically load header and footer content
+Promise.all([
+  fetch("header.html").then(r => r.text()),
+  fetch("footer.html").then(r => r.text())
+]).then(([header, footer]) => {
+  const headerEl = document.querySelector("header");
+  if (headerEl) headerEl.innerHTML = header;
+  const footerEl = document.querySelector("footer");
+  if (footerEl) footerEl.innerHTML = footer;
+});
 
     <div class="main" role="main">
-            
-    	<div class="hero ">
-    	
-  
-
-            
-        	<div class="b-container">
-            	<div class="heading-wrapper">
-                	<h1 class="heading">The Siboro Institute</h1>
-            	</div>
-
-
-				<!-- Carousel -->
-
-            	<div id="hero-carousel" class="carousel slide">
-            
-            
-            		<!-- Carousel Inner -->
-            
-	        		<div class="carousel-inner">
-                		<a href="/"><img src="img/mainpage.jpg"></a>
-					</div>
-                            
-                
-<!-- /Carousel Inner -->
-
-<!--
-                <button type="button" class="left carousel-control" data-target="#hero-carousel" data-slide="prev">
-                    <span class="target">
-                        <span class="arrow"></span>
-                    </span>
-                </button>
-
-                <button type="button" class="right carousel-control" data-target="#hero-carousel" data-slide="next">
-                    <span class="target">
-                        <span class="arrow"></span>
-                    </span>
-                </button>
-
-                	<div class="carousel-indicators">
-                    
+        <div class="hero">
+            <div class="b-container">
+                <div class="heading-wrapper">
+                    <h1 class="heading">The Siboro Institute</h1>
+                </div>
+                <!-- Carousel -->
+                <div id="hero-carousel" class="carousel slide">
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+                        <a href="/"><img src="img/mainpage.jpg" alt="Main page"></a>
+                    </div>
+                    <!-- /Carousel Inner -->
+                    <!--
+                    <button type="button" class="left carousel-control" data-target="#hero-carousel" data-slide="prev">
+                        <span class="target">
+                            <span class="arrow"></span>
+                        </span>
+                    </button>
+                    <button type="button" class="right carousel-control" data-target="#hero-carousel" data-slide="next">
+                        <span class="target">
+                            <span class="arrow"></span>
+                        </span>
+                    </button>
+                    <div class="carousel-indicators">
                         <button type="button" class="indicator active" data-target="#hero-carousel" data-slide-to="0"></button>
-                    
-                        <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="1"></button>
-                    
-                        <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="2"></button>
-                    
-                	</div>
--->
-
-            	</div>
-            
-        
-            
-            
-            <!-- /Carousel -->
-            
-        </div>
-
-            
-            
-            
-            
-            
+                        <button type="button" class="indicator" data-target="#hero-carousel" data-slide-to="1"></button>
+                        <button type="button" class="indicator" data-target="#hero-carousel" data-slide-to="2"></button>
+                    </div>
+                    -->
+                </div>
 
     </div>
 
-    
-<!-- Featured links -->
-<!--
+    <!-- Featured links (commented out for future use) -->
+    <!--
     <div class="featured-links">
         <div class="b-container">
             <div class="b-row">
                 <div class="span4 one">
                     <a href="http://siboro.org/">
-
-<img alt="" data-hisrc="" width="180" height="90" src="img/trio-smallbusinesses-2x.png" data-2x="img/trio-smallbusinesses-2x.png">
-
-    <b>For small businesses</b>
-    Feature tour
-</a>
+                        <img alt="" data-hisrc="" width="180" height="90" src="img/trio-smallbusinesses-2x.png" data-2x="img/trio-smallbusinesses-2x.png">
+                        <b>For small businesses</b>
+                        Feature tour
+                    </a>
                 </div>
                 <div class="span4 two">
                     <a href="http://siboro.org/" >
-
-<img alt="" data-hisrc="" width="180" height="90" src="img/trio-partners-2x.png" data-2x="img/trio-partners-2x.png">
-
-    <b>For consultants</b>
-    Partner with us
-</a>
+                        <img alt="" data-hisrc="" width="180" height="90" src="img/trio-partners-2x.png" data-2x="img/trio-partners-2x.png">
+                        <b>For consultants</b>
+                        Partner with us
+                    </a>
                 </div>
                 <div class="span4 three">
                     <a href="http://siboro.org/pricing/">
-
-<img alt="" data-hisrc="" width="180" height="90" src="img/trio-plans-2x.png" data-2x="img/trio-plans-2x.png">
-
-    <b>Plans from $$$/month</b>
-    See pricing
-</a>
+                        <img alt="" data-hisrc="" width="180" height="90" src="img/trio-plans-2x.png" data-2x="img/trio-plans-2x.png">
+                        <b>Plans from $$$/month</b>
+                        See pricing
+                    </a>
                 </div>
             </div>
         </div>
     </div>
--->
-<!-- /Featured links -->
+    -->
+    <!-- /Featured links -->
 
-
-<!-- Features -->
+    <!-- Features -->
     <div class="features">
         <div class="b-container">
             <section class="b-row one">
-                <h2 class="heading">“To make man whole” 
-                </h2>
-                
+                <h2 class="heading">“To make man whole”</h2>
                 <p class="description">
-                Siboro Institute's philosophy put simply is "to make man whole". This is expressed more fully in these words of<br />
-                 America’s most translated writer, Ellen G. White, about education: "True education means more than the pursual of <br />
-                 a certain course of study. It means more than a preparation for the life that now is. It has to do with the whole <br />
-                 being, and with the whole period of existence possible to man. It is the harmonious development of the physical, <br />
-                 the mental, and the spiritual powers. It prepares the student for the joy of service in this world and for the <br />
-                 higher joy of wider service in the world to come." (Ellen G. White, Education, 1903, Chapter 1)</p>
-                
-
+                    Siboro Institute's philosophy put simply is "to make man whole". This is expressed more fully in these words of<br>
+                    America’s most translated writer, Ellen G. White, about education: "True education means more than the pursual of <br>
+                    a certain course of study. It means more than a preparation for the life that now is. It has to do with the whole <br>
+                    being, and with the whole period of existence possible to man. It is the harmonious development of the physical, <br>
+                    the mental, and the spiritual powers. It prepares the student for the joy of service in this world and for the <br>
+                    higher joy of wider service in the world to come." (Ellen G. White, Education, 1903, Chapter 1)
+                </p>
                 <div class="span6">
-                
-                <!-- Quotes -->
-<!--
+                    <!-- Quotes (commented out for future use) -->
+                    <!--
                     <div id="quotes-carousel" class="carousel carousel-fade slide">
                         <div class="carousel-inner">
-                            <div class="item">
-                                <a class="quote" href="files/1229" target="_blank">
-
-                                    <figure>
-                                        <blockquote cite="files/1229">
-                                            <p>
-                                                Description 1.
-                                            </p>
-                                        </blockquote>
-
-                                        <figcaption class="link">
-                                            Name 1
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            
-        <div class="item">
-            <a class="quote" href="files/342015252193505280" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/342015252193505280">
-                        <p>
-                             Description 2.
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 2
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-        <div class="item">
-            <a class="quote" href="files/341701054204891137" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/341701054204891137">
-                        <p>
-                            Description 3
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 3
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-        <div class="item active">
-            <a class="quote" href="files/3369" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/3369">
-                        <p>
-                            Description 4
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 4
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-        <div class="item">
-            <a class="quote" href="files/363098622616809472" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/363098622616809472">
-                        <p>
-                            Description 5.
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 5
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-        <div class="item">
-            <a class="quote" href="files/363401481091035136" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/363401481091035136">
-                        <p>
-                            Description 6
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 6
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-        <div class="item">
-            <a class="quote" href="files/353325967495802880" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/353325967495802880">
-                        <p>
-                            Description 7.
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 7
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-        <div class="item">
-            <a class="quote" href="files/360004246042705920" target="_blank">
-
-                <figure>
-                    <blockquote cite="files/360004246042705920">
-                        <p>
-                            Description 8.
-                        </p>
-                    </blockquote>
-
-                    <figcaption class="link">
-                        Name 8
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-    
-
-
-
-
+                            ...existing code...
                         </div>
                     </div>
--->
-                <!-- /Quotes -->
+                    -->
+                    <!-- /Quotes -->
                 </div>
             </section>
-
             <section class="b-row two">
                 <div class="span6">
                     <h2 class="heading">Simple, Natural Healing</h2>
-<p class="description">Our body is equipped with self-healing powers, and nature has substances to the process.</p>
+                    <p class="description">Our body is equipped with self-healing powers, and nature has substances to the process.</p>
                 </div>
-                
                 <div class="span6">
-                    <a href="https://facebook.com/arangobatajaib">ArangObatAjaib</a><br />
-                    <a href="http://bebasdarisakit.siboro.org">BebasDariSakit</a><br />
+                    <a href="https://facebook.com/arangobatajaib">ArangObatAjaib</a><br>
+                    <a href="http://bebasdarisakit.siboro.org">BebasDariSakit</a><br>
                 </div>
-                
             </section>
-            
-
             <section class="b-row three last">
                 <div class="span6">
                     <h2 class="heading">Book Publishing</h2>
-<p class="description">We publish books for the harmonious development of all aspects of human beings.</p>
+                    <p class="description">We publish books for the harmonious development of all aspects of human beings.</p>
                 </div>
-                
                 <div class="span6">
-                    
-                    <a href="pub-arang.html">Arang Aktif</a><br />
-                    <a href="pub-ceritaanak.html">Mutiara Cerita Anak-Anak</a><br />
-                    <a href="pub-janjiallah.html">Janji-Janji Allah Dalam Alkitab</a><br />
-                    <a href="pub-medicalministry.html">Pelayanan Perorangan</a><br />
-                    <a href="pub-perawatmisi.html">Perawat Misi</a><br />
+                    <a href="pub-arang.html">Arang Aktif</a><br>
+                    <a href="pub-ceritaanak.html">Mutiara Cerita Anak-Anak</a><br>
+                    <a href="pub-janjiallah.html">Janji-Janji Allah Dalam Alkitab</a><br>
+                    <a href="pub-medicalministry.html">Pelayanan Perorangan</a><br>
+                    <a href="pub-perawatmisi.html">Perawat Misi</a><br>
                 </div>
-                
             </section>
-            
             <p></p>
             <p></p>
-
-            
         </div>
     </div>
-<!-- /Features -->
+    <!-- /Features -->
 
-        </div>
-      
-        
-
-<!-- This base.js is needed among others for dropdown "More" menu on top -->
+    <!-- This base.js is needed among others for dropdown "More" menu on top -->
     <script src="js/base.js"></script>
 
-<!-- footer scripts here -->
+    <!-- footer scripts here -->
 
- <footer>
-</footer> 
+
+    <!-- Only one footer element needed -->
+    <footer></footer>
 
 </body></html>

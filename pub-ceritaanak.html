@@ -1,63 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us" class=" global-nav-dark region-us  js no-touch hashchange cssanimations csstransforms csstransitions cors" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en-us" class="global-nav-dark region-us js no-touch hashchange cssanimations csstransforms csstransitions cors">
+<head>
     <meta charset="utf-8">
-
     <title>The Siboro Institute</title>
     <meta name="title" content="The Siboro Institute">
     <meta name="description" content="The Siboro Institute">
-
-    
-        <meta name="viewport" content="user-scalable=yes, width=980">
-    
-<link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/home.css">
-
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="application-name" content="The Siboro Institute">
+    <meta name="msvalidate.01" content="172A75EAA5C9D028CFE02B0E4079A98B">
+    <meta property="og:site_name" content="The Siboro Institute">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="http://siboro.org/favicon.png">
-
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://siboro.org/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://siboro.org/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://siboro.org/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://siboro.org/apple-touch-icon-precomposed.png">
-
-    <meta name="application-name" content="The Siboro Institute">
-    
     <link rel="alternate" href="http://siboro.org/" hreflang="x-default">
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
     <link rel="alternate" href="http://siboro.org/" hreflang="en-uk">
     <link rel="alternate" href="http://siboro.org/" hreflang="en-us">
-
-    <meta name="msvalidate.01" content="172A75EAA5C9D028CFE02B0E4079A98B">
-
-    
-        
-
-<meta property="og:site_name" content="The Siboro Institute">
-<meta property="og:type" content="website">
-    
-<script type="text/javascript" charset="utf-8" async="" src="js/home.js"></script>
-    
-<!-- For responsiveness, see https://catswhocode.com/how-to-make-a-responsive-website/ -->
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-
+    <script src="js/home.js" async></script>
 </head>
+<body>
 
-<body style="">
-
-	<header id="global-header" class="global-header-dark">
+    <header id="global-header" class="global-header-dark">
      
-	</header>
+    </header>
         
 <script>
-fetch("header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header").innerHTML = data;
-  });
+// Dynamically load header and footer content
+Promise.all([
+  fetch("header.html").then(r => r.text()),
+  fetch("footer.html").then(r => r.text())
+]).then(([header, footer]) => {
+  const headerEl = document.querySelector("header");
+  if (headerEl) headerEl.innerHTML = header;
+  const footerEl = document.querySelector("footer");
+  if (footerEl) footerEl.innerHTML = footer;
+});
 
 fetch("footer.html")
   .then(response => {
@@ -70,26 +54,26 @@ fetch("footer.html")
 
     <div class="main" role="main">
             
-    	<div class="hero ">
-    	
+        <div class="hero ">
+        
   
-        	<div class="b-container">
-            	<div class="heading-wrapper">
-                	<h1 class="heading">The Siboro Institute</h1>
-            	</div>
+            <div class="b-container">
+                <div class="heading-wrapper">
+                    <h1 class="heading">The Siboro Institute</h1>
+                </div>
 
 
-				<!-- Carousel -->
+                <!-- Carousel -->
 
-            	<div id="hero-carousel" class="carousel slide ">
+                <div id="hero-carousel" class="carousel slide ">
             
             
-            		<!-- Carousel Inner -->
+                    <!-- Carousel Inner -->
             
-	        		<!--
+                    <!--
                     <div class="carousel-inner">
-                		<a href="http://institute.siboro.org"><img src="img/mainpage.jpg"></a>
-					</div>
+                        <a href="http://institute.siboro.org"><img src="img/mainpage.jpg"></a>
+                    </div>
                 -->
                             
                 
@@ -108,7 +92,7 @@ fetch("footer.html")
                     </span>
                 </button>
 
-                	<div class="carousel-indicators">
+                    <div class="carousel-indicators">
                     
                         <button type="button" class="indicator active" data-target="#hero-carousel" data-slide-to="0"></button>
                     
@@ -116,10 +100,10 @@ fetch("footer.html")
                     
                         <button type="button" class="indicator " data-target="#hero-carousel" data-slide-to="2"></button>
                     
-                	</div>
+                    </div>
 -->
 
-            	</div>
+                </div>
             
         
             
@@ -127,7 +111,7 @@ fetch("footer.html")
             <!-- /Carousel -->
             
         </div>
-  	
+    
 
 
     </div>
