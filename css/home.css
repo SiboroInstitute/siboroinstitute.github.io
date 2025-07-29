@@ -1,3 +1,11 @@
+/* Responsive image for main page carousel */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .xvideo {
     overflow: hidden;
     border: 10px solid #fff;
@@ -78,7 +86,7 @@
 }
 .xvideo-wrapper:hover .xvideo-play-button { background-position: 0 -65px }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.xvideo-play-button { background-image: url(/images/guides/cloud/play_icon2x.png) }
+    .xvideo-play-button { background-image: url(/images/guides/cloud/play_icon2x.png) }
 }
 .xvideo-slidedown .xvideo-wrapper { padding-bottom: 28.125% }
 .xvideo-slidedown.xvideo-open .xvideo-wrapper { padding-bottom: 56.25% }
@@ -130,12 +138,12 @@
 }
 /*
 @media (max-width:767px) { 
-	.enableFluid .xvideo-fade-element {
-	    -webkit-box-sizing: border-box;
-	    -moz-box-sizing: border-box;
-	    box-sizing: border-box;
-	    width: 100%;
-	}
+    .enableFluid .xvideo-fade-element {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+    }
 }
 */
 .xvideo { display: none }
@@ -174,8 +182,8 @@
 .xvideo-end.xvideo-start-only .xvideo-end-frame { visibility: hidden }
 /*
 @media (max-width:480px) { 
-	.xvideo { border-width: 5px }
-	.xvideo-slidedown .xvideo-wrapper { padding-bottom: 37.5% }
+    .xvideo { border-width: 5px }
+    .xvideo-slidedown .xvideo-wrapper { padding-bottom: 37.5% }
 }
 */
 .carousel { position: relative }
@@ -315,20 +323,20 @@
 .carousel-caption .btn { text-shadow: none }
 /*
 @media screen and (min-width:768px) { 
-	.carousel-control .icon-prev,
-	.carousel-control .icon-next {
-	    width: 30px;
-	    height: 30px;
-	    margin-top: -15px;
-	    margin-left: -15px;
-	    font-size: 30px;
-	}
-	.carousel-caption {
-	    left: 20%;
-	    right: 20%;
-	    padding-bottom: 30px;
-	}
-	.carousel-indicators { bottom: 20px }
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        margin-left: -15px;
+        font-size: 30px;
+    }
+    .carousel-caption {
+        left: 20%;
+        right: 20%;
+        padding-bottom: 30px;
+    }
+    .carousel-indicators { bottom: 20px }
 }
 */
 
@@ -700,7 +708,7 @@
     background-position: left top;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	#global-header.global-header-dark .global-header-logo { background-image: url(../img/netikalogo-large-2x.png) }
+    #global-header.global-header-dark .global-header-logo { background-image: url(../img/netikalogo-large-2x.png) }
 }
 #global-header.global-header-dark .global-header-logo:hover,
 #global-header.global-header-dark .global-header-logo:focus { background-position: right top }
@@ -714,7 +722,7 @@
     background-position: -64px 0;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.hero .xvideo-play-button { background-image: url(../img/sprite-2x.png) }
+    .hero .xvideo-play-button { background-image: url(../img/sprite-2x.png) }
 }
 .hero .xvideo-wrapper:hover .xvideo-play-button {
     opacity: .7;
@@ -727,7 +735,7 @@
     background-size: 224px 128px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.hero .carousel .carousel-control .arrow { background-image: url(../img/sprite-2x.png) }
+    .hero .carousel .carousel-control .arrow { background-image: url(../img/sprite-2x.png) }
 }
 .hero .carousel .carousel-control.left .arrow { background-position: 0 0 }
 .hero .carousel .carousel-control.right .arrow { background-position: -32px 0 }
@@ -741,7 +749,7 @@
     background-position: -8px -6px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.hero .mobile-video .logo-iphone { background-image: url(../img/apple-android-logos-2x.png) }
+    .hero .mobile-video .logo-iphone { background-image: url(../img/apple-android-logos-2x.png) }
 }
 .hero .mobile-video .logo-android {
     width: 15px;
@@ -751,7 +759,7 @@
     background-position: -40px -5px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.hero .mobile-video .logo-android { background-image: url(../img/apple-android-logos-2x.png) }
+    .hero .mobile-video .logo-android { background-image: url(../img/apple-android-logos-2x.png) }
 }
 .hero .app-links .button .logo {
     display: inline-block;
@@ -765,7 +773,7 @@
     background-position: -5px -36px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.hero .app-links .button .logo-iphone { background-image: url(../img/apple-android-logos-2x.png) }
+    .hero .app-links .button .logo-iphone { background-image: url(../img/apple-android-logos-2x.png) }
 }
 .hero .app-links .button .logo-android {
     background-image: url(../img/apple-android-logos.png);
@@ -773,21 +781,21 @@
     background-position: -37px -37px;
 }
 @media print,(-o-min-device-pixel-ratio:5 / 4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) { 
-	.hero .app-links .button .logo-android { background-image: url(../img/apple-android-logos-2x.png) }
+    .hero .app-links .button .logo-android { background-image: url(../img/apple-android-logos-2x.png) }
 }
 @media (max-height:767px) { 
-	.hero { margin-top: 20px }
-	.hero .heading-wrapper { margin-bottom: 30px }
-	.hero .carousel .item { min-height: 282px }
-	.hero .xvideo-wrapper { padding-bottom: 30% }
-	.promo-bar-shown .carousel .item { min-height: 263px }
-	.promo-bar-shown .xvideo-wrapper { padding-bottom: 28% }
-	.featured-links { padding: 3px 0 15px }
-	.features .b-row {
-	    padding-top: 50px;
-	    padding-bottom: 50px;
-	}
-	.features .b-row:first-child { padding-top: 55px }
+    .hero { margin-top: 20px }
+    .hero .heading-wrapper { margin-bottom: 30px }
+    .hero .carousel .item { min-height: 282px }
+    .hero .xvideo-wrapper { padding-bottom: 30% }
+    .promo-bar-shown .carousel .item { min-height: 263px }
+    .promo-bar-shown .xvideo-wrapper { padding-bottom: 28% }
+    .featured-links { padding: 3px 0 15px }
+    .features .b-row {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .features .b-row:first-child { padding-top: 55px }
 }
 .promo-bar {
     min-height: 96px;
@@ -898,14 +906,14 @@
 
 /*
 @media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2 / 1),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx) { 
-	.region-uk .promo-bar a {
-	    background: url(/media/446263/xerocon-uk-2x.png) 0 no-repeat;
-	    background-size: 158px 44px;
-	}
-	.region-us .promo-bar a {
-	    background: url(/media/446700/xerocon2x.png) 0 no-repeat;
-	    background-size: 161px 55px;
-	}
+    .region-uk .promo-bar a {
+        background: url(/media/446263/xerocon-uk-2x.png) 0 no-repeat;
+        background-size: 158px 44px;
+    }
+    .region-us .promo-bar a {
+        background: url(/media/446700/xerocon2x.png) 0 no-repeat;
+        background-size: 161px 55px;
+    }
 }
 */
 
