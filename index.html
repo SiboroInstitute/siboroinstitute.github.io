@@ -14,6 +14,10 @@
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Modernizr CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/3.12.0/modernizr.min.js"></script>
     <link rel="shortcut icon" href="http://siboro.org/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://siboro.org/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://siboro.org/apple-touch-icon-114x114-precomposed.png">
@@ -34,8 +38,8 @@
 <script>
 // Dynamically load header and footer content
 Promise.all([
-  fetch("header.html").then(r => r.text()),
-  fetch("footer.html").then(r => r.text())
+  fetch("header.html").then(r => r.ok ? r.text() : "<div style='color:red'>Header failed to load.</div>").catch(() => "<div style='color:red'>Header failed to load.</div>"),
+  fetch("footer.html").then(r => r.ok ? r.text() : "<div style='color:red'>Footer failed to load.</div>").catch(() => "<div style='color:red'>Footer failed to load.</div>")
 ]).then(([header, footer]) => {
   const headerEl = document.querySelector("header");
   if (headerEl) headerEl.innerHTML = header;
