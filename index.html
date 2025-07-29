@@ -18,6 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Modernizr CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/3.12.0/modernizr.min.js"></script>
+    <!-- RequireJS CDN for AMD modules -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
     <link rel="shortcut icon" href="http://siboro.org/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://siboro.org/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://siboro.org/apple-touch-icon-114x114-precomposed.png">
@@ -27,6 +29,7 @@
     <link rel="alternate" href="http://siboro.org/jp/" hreflang="ja-jp">
     <link rel="alternate" href="http://siboro.org/" hreflang="en-uk">
     <link rel="alternate" href="http://siboro.org/" hreflang="en-us">
+    <!-- home.js uses AMD/RequireJS, so load after RequireJS -->
     <script src="js/home.js" async></script>
 </head>
 <body>
