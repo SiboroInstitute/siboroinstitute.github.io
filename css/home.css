@@ -1028,3 +1028,45 @@ html { font-size:100%; }
     border-radius: 0;
   }
 }
+
+/* Responsive navigation bar styles for header */
+.global-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.global-header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.global-header-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 8px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.global-header-links a:hover {
+  background: rgba(255,255,255,0.1);
+}
+@media (max-width: 700px) {
+  .global-header-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 8px;
+  }
+  .global-header-links {
+    flex-direction: column;
+    gap: 0;
+  }
+  .global-header-links a {
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    border-radius: 0;
+  }
+}
