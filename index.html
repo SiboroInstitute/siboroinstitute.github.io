@@ -39,6 +39,7 @@
     <link rel="alternate" href="http://siboro.org/" hreflang="en-us">
     <!-- home.js uses AMD/RequireJS, so load after RequireJS -->
     <script src="js/home.js" async></script>
+    <!-- Removed analytics.js reference to prevent 404 and RequireJS errors -->
 </head>
 <body>
 
@@ -57,6 +58,7 @@ Promise.all([
   const footerEl = document.querySelector("footer");
   if (footerEl) footerEl.innerHTML = footer;
 });
+</script>
 
     <div class="main" role="main">
         <div class="hero">
