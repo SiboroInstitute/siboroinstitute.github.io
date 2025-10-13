@@ -518,6 +518,69 @@
     top: 100%;
     font-size: 0;
 }
+
+/* ========== Responsive fixes (appended) ========== */
+/* Prevent forced desktop layout and horizontal overflow on small screens */
+@media (max-width: 960px) {
+    /* allow the main wrapper to shrink on small screens */
+    .main { min-width: 0 !important; }
+
+    /* Make the container fluid while keeping a max-width for large viewports */
+    .b-container {
+        width: 100% !important;
+        max-width: 940px;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Avoid using 100vw which causes overflow when scrollbars appear; use 100% */
+    .responsive-img,
+    #hero-carousel,
+    .carousel-inner,
+    .hero,
+    .b-container,
+    .main {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Make hero image scale correctly */
+    .responsive-img { width: 100% !important; height: auto !important; display: block; }
+
+    /* Header: stack logo/tagline and navigation for narrow screens */
+    #global-header .global-header-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px;
+        padding: 8px 0;
+    }
+    #global-header .global-header-left,
+    #global-header .global-header-right { width: 100% !important; }
+
+    /* Navigation links: make them wrap and be visible without horizontal scroll */
+    #global-header .global-header-links ul { display: flex !important; flex-wrap: wrap !important; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    #global-header .global-header-links li { display: block !important; }
+    #global-header .global-header-main-link { display: inline-block; padding: 8px 10px; }
+
+    /* Reduce hero heading size on small screens */
+    .hero .heading { font-size: 24px !important; }
+    .hero .heading-wrapper { margin-bottom: 16px !important; }
+}
+
+/* Small adjustments for very small screens */
+@media (max-width: 420px) {
+    .hero .heading { font-size: 20px !important; }
+    .b-container { padding-left: 12px; padding-right: 12px; }
+}
+
+/* End responsive fixes */
 .hero .carousel .indicator {
     width: 8px;
     height: 8px;
