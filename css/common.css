@@ -14,8 +14,8 @@ audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
 }
 audio:not([controls]) {
     display: none;
@@ -192,8 +192,20 @@ table {
 }
 .b-row {
     margin-left: -20px;
-    /* legacy star-hack removed; use modern clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
 }
+.clearfix:after { clear: both }
+.b-row { /* keep compatibility by also applying clearfix */ }
+.b-row:before,
+.b-row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.b-row:after { clear: both }
 .clearfix:before,
 .clearfix:after {
     content: "";
@@ -291,7 +303,7 @@ table {
 .offset1 { margin-left: 100px }
 .b-row-fluid {
     width: 100%;
-    *zoom: 1;
+    zoom: 1;
 }
 .b-row-fluid:before,
 .b-row-fluid:after {
@@ -603,8 +615,8 @@ table {
 @media (min-width:768px) and (max-width:979px) { 
 	html.enableFluid { min-width: inherit }
 	html.enableFluid .b-row {
-	    margin-left: -20px;
-	    *zoom: 1;
+    margin-left: -20px;
+    zoom: 1;
 	}
 	html.enableFluid .b-row:before,
 	html.enableFluid .b-row:after {
@@ -665,8 +677,8 @@ table {
 	    box-sizing: border-box;
 	}
 	html.enableFluid .b-row-fluid {
-	    width: 100%;
-	    *zoom: 1;
+    width: 100%;
+    zoom: 1;
 	}
 	html.enableFluid .b-row-fluid:before,
 	html.enableFluid .b-row-fluid:after {
@@ -965,7 +977,7 @@ h6 {
     font-weight: 400;
     font-style: normal;
 }
-.clearfix { *zoom: 1 }
+.clearfix { zoom: 1 }
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -994,8 +1006,8 @@ h6 {
 .cta-button,
 .try-button {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     padding: .5em 1.2em;
     vertical-align: middle;
     border-radius: 0em;  /* form making the corners round */ 
@@ -1304,8 +1316,8 @@ h6 {
 #global-header .global-header-left,
 #global-header .global-header-right {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
 }
 #global-header .global-header-left { width: 35% }
 #global-header .global-header-right {
@@ -1314,8 +1326,8 @@ h6 {
 }
 #global-header .global-header-logo {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     width: 45px;
     height: 45px;
     vertical-align: middle;
@@ -1332,8 +1344,8 @@ h6 {
 }
 #global-header .global-header-dropdown .global-header-arrow {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     width: 10px;
     height: 7px;
     margin-left: 5px;
@@ -1511,7 +1523,7 @@ h6 {
     width: 940px;
     margin: auto;
 }
-#global-footer .global-footer-clearfix { *zoom: 1 }
+#global-footer .global-footer-clearfix { zoom: 1 }
 #global-footer .global-footer-clearfix:before,
 #global-footer .global-footer-clearfix:after {
     content: " ";
@@ -1521,8 +1533,8 @@ h6 {
 #global-footer .global-footer-cta { text-align: center }
 #global-footer .global-footer-cta-button {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     padding: .4em 1.2em;
     /*border-radius: 2em;*/
     border-radius: 0em;
@@ -1647,8 +1659,8 @@ h6 {
 #global-footer .select2-container .select2-drop .select2-results .select2-highlighted { color: inherit }
 #global-footer .global-footer-search {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     position: relative;
 }
 #global-footer .global-footer-search .global-footer-search-label {
@@ -1699,8 +1711,8 @@ h6 {
 #global-footer .global-footer-terms-links a:first-child { margin-left: 0 }
 #global-footer .global-footer-social-links .icon {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     width: 16px;
     height: 16px;
     margin-right: .5em;
@@ -1939,8 +1951,8 @@ h6 {
 #partner-banner .span12 { padding: 10px 0 }
 #partner-banner p a {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     margin: 0 1em;
     padding: .5em 1em;
     line-height: 1;
@@ -2034,8 +2046,8 @@ h6 {
 }
 #partnerform #partnerform-submit {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     width: 150px;
     height: 38px;
     text-indent: -9999px;

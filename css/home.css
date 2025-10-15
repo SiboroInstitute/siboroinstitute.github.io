@@ -466,7 +466,7 @@
     transition: .75s ease-out;
 }
 .hero .heading-wrapper {
-    *zoom: 1;
+    zoom: 1;
     margin-bottom: 39px;
     -webkit-transition-property: margin-bottom;
     transition-property: margin-bottom;
