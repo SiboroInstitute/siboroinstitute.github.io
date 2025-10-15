@@ -233,6 +233,39 @@ table {
 .span9 { width: 700px }
 .span8 { width: 620px }
 .span7 { width: 540px }
+/* Modern flexbox grid overrides (placed after legacy float grid to act as a safe override) */
+/* Uses gap-based gutters and flex-basis percentages matching legacy pixel widths */
+.b-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* visual gutter similar to previous 20px margin-left */
+    margin-left: 0;
+    margin-right: 0;
+}
+[class*=span] {
+    box-sizing: border-box;
+    min-height: 1px;
+    flex: 0 0 100%; /* default to full width on narrow viewports */
+    margin-left: 0 !important;
+}
+/* Define desktop flex-basis values (approximate percentages of 940px container) */
+@media (min-width: 940px) {
+    .span12 { flex-basis: 100%; }
+    .span11 { flex-basis: 91.489%; }
+    .span10 { flex-basis: 82.979%; }
+    .span9  { flex-basis: 74.468%; }
+    .span8  { flex-basis: 65.957%; }
+    .span7  { flex-basis: 57.447%; }
+    .span6  { flex-basis: 48.936%; }
+    .span5  { flex-basis: 40.426%; }
+    .span4  { flex-basis: 31.915%; }
+    .span3  { flex-basis: 23.404%; }
+    .span2  { flex-basis: 14.894%; }
+    .span1  { flex-basis: 6.383%; }
+}
+
+/* Small helper: if older float rules still apply, ensure the modern grid wins */
+.b-row, [class*=span] { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .span6 { width: 460px }
 .span5 { width: 380px }
 .span4 { width: 300px }
