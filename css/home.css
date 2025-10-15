@@ -604,14 +604,20 @@
     #global-header .global-header-main-link { display: inline-block; padding: 8px 10px; }
 
     /* Reduce hero heading size on small screens */
-    .hero .heading { font-size: 24px !important; }
+    .hero .heading { font-size: 22px !important; }
     .hero .heading-wrapper { margin-bottom: 16px !important; }
 }
 
 /* Small adjustments for very small screens */
 @media (max-width: 420px) {
-    .hero .heading { font-size: 20px !important; }
-    .b-container { padding-left: 12px; padding-right: 12px; }
+    .hero .heading { font-size: 18px !important; }
+    .b-container { padding-left: 14px; padding-right: 14px; }
+}
+
+/* Medium breakpoints: slightly increase container padding for readability */
+@media (min-width: 961px) and (max-width: 1200px) {
+    .b-container { padding-left: 32px !important; padding-right: 32px !important; }
+    .features .description { font-size: 18px; }
 }
 
 /* End responsive fixes */
@@ -686,7 +692,6 @@
     font-weight: 400;
 }
 .hero .app-links .button .circle {
-    float: left;
     display: inline-block;
     width: 32px;
     height: 32px;
