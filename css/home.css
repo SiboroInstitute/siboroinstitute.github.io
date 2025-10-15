@@ -50,6 +50,12 @@
     color: inherit;
     text-decoration: none;
 }
+
+/* Ensure the feature section main quote heading is visible on light backgrounds */
+.features .b-row.one .heading,
+.features .b-row.one h2.heading {
+    color: #000000;
+}
 .xvideo {
     overflow: hidden;
     border: 10px solid #fff;
@@ -424,6 +430,12 @@
 }
 #global-header.global-header-dark .global-header-tagline { display: none }
 .main { min-width: 940px }
+
+/* Mobile override: remove the legacy fixed min-width on narrow viewports to avoid horizontal overflow */
+@media (max-width: 767px) {
+    .main { min-width: 0 !important; width: 100% !important; }
+    .b-container { width: 100% !important; padding-left: 10px !important; padding-right: 10px !important; box-sizing: border-box; }
+}
 .hero {
     padding-bottom: 30px;
     margin-top: 30px;

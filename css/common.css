@@ -192,7 +192,22 @@ table {
 }
 .b-row {
     margin-left: -20px;
-    *zoom: 1;
+    /* legacy star-hack removed; use modern clearfix */
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after { clear: both }
+.b-row { /* keep compatibility by also applying clearfix */ }
+.b-row:before,
+.b-row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.b-row:after { clear: both }
 }
 .b-row:before,
 .b-row:after {
