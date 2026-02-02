@@ -53,6 +53,30 @@ a {
   padding: 18px 0;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.lang-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.lang-select {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
 .logo {
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -516,5 +540,10 @@ a {
 
   .nav-toggle {
     display: inline-flex;
+  }
+
+  .nav-actions {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

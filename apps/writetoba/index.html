@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Write Toba adalah aplikasi transliterasi offline untuk teks Indonesia ↔ aksara Batak Toba, dibuat untuk kejelasan, budaya, dan pemakaian harian.">
+  <meta name="theme-color" content="#F44336">
+  <title>Write Toba — Indonesia ↔ Aksara Batak Toba, Seketika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Batak:wght@400;600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" data-i18n="app_name">Write Toba</a>
+      <div class="nav-actions">
+        <label class="lang-label" for="lang-select" data-i18n="lang_label">Bahasa</label>
+        <select id="lang-select" class="lang-select" aria-label="Pilih bahasa" data-i18n-attr="aria-label:lang_select">
+          <option value="id" data-i18n="lang_id">Indonesia</option>
+          <option value="en" data-i18n="lang_en">English</option>
+          <option value="bbc" data-i18n="lang_bbc">Batak Toba</option>
+        </select>
+      </div>
+      <button class="nav-toggle" aria-label="Buka navigasi" aria-expanded="false" data-i18n-attr="aria-label:nav_toggle">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#features" data-i18n="nav_features">Fitur</a></li>
+        <li><a href="#how-it-works" data-i18n="nav_how">Cara Kerja</a></li>
+        <li><a href="#fonts" data-i18n="nav_fonts">Font</a></li>
+        <li><a href="#learn" data-i18n="nav_learn">Belajar</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        <li><a href="#download" data-i18n="nav_download">Unduh</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow" data-i18n="hero_eyebrow">Transliterasi • Offline-first • Dibuat oleh The Siboro Institute</p>
+        <h1 data-i18n="hero_title">Tulis Toba dengan percaya diri.</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Write Toba membantu Anda mentransliterasi teks Indonesia ke aksara Batak Toba (dan sebaliknya)
+          dengan cepat, jelas, dan penuh penghormatan budaya — langsung di perangkat.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#download" data-i18n="hero_primary">Dapatkan untuk Android</a>
+          <a class="btn ghost" href="#learn" data-i18n="hero_secondary">Pelajari aksaranya</a>
+        </div>
+        <div class="hero-meta">
+          <span data-i18n="hero_meta_one">Indonesia ↔ Batak</span>
+          <span data-i18n="hero_meta_two">Real-time</span>
+          <span data-i18n="hero_meta_three">Bisa offline</span>
+        </div>
+      </div>
+      <div class="hero-card" data-reveal>
+        <div class="card-header">
+          <span class="card-dot"></span>
+          <span class="card-dot"></span>
+          <span class="card-dot"></span>
+          <span class="card-title" data-i18n="card_title">Transliterasi Langsung</span>
+        </div>
+        <div class="card-body">
+          <div class="card-row">
+            <span class="label" data-i18n="card_left">Indonesia</span>
+            <span class="swap">↔</span>
+            <span class="label" data-i18n="card_right">Toba</span>
+          </div>
+          <div class="input-block">
+            <p class="input-label" data-i18n="card_input_label">Input</p>
+            <p class="input-text" data-i18n="card_input_text">Horas di bagasan</p>
+          </div>
+          <div class="output-block">
+            <p class="input-label" data-i18n="card_output_label">Output</p>
+            <p class="output-text" data-i18n="card_output_text">ᮠᮧᮛᮝᮘᮤ ᮘᮌᮞᮔ</p>
+          </div>
+          <div class="chip-row">
+            <span class="chip" data-i18n="chip_copy">Salin</span>
+            <span class="chip" data-i18n="chip_paste">Tempel</span>
+            <span class="chip" data-i18n="chip_clear">Bersihkan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </header>
+
+  <section class="trust" id="features">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <h2 data-i18n="features_title">Dirancang untuk menulis Batak sehari-hari</h2>
+        <p data-i18n="features_subtitle">Alat transliterasi cepat, kontrol yang rapi, dan output aksara yang akurat.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature" data-reveal>
+          <h3 data-i18n="feature_one_title">Transliterasi Real-time</h3>
+          <p data-i18n="feature_one_body">Ketik teks Indonesia dan aksara Batak Toba muncul seketika.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <h3 data-i18n="feature_two_title">Mode Dua Arah</h3>
+          <p data-i18n="feature_two_body">Tukar arah untuk mengubah aksara Batak kembali ke Latin.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <h3 data-i18n="feature_three_title">Diakritik + Angka</h3>
+          <p data-i18n="feature_three_body">Tanda vokal dan angka Batak ditangani lengkap.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <h3 data-i18n="feature_four_title">Salin, Tempel, Bersihkan</h3>
+          <p data-i18n="feature_four_body">Aksi cepat membuat berbagi dan menyunting jadi mudah.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <h3 data-i18n="feature_five_title">Pilihan Font</h3>
+          <p data-i18n="feature_five_body">Pilih font Batak yang paling cocok untuk pembaca Anda.</p>
+        </div>
+        <div class="feature" data-reveal>
+          <h3 data-i18n="feature_six_title">Offline-first</h3>
+          <p data-i18n="feature_six_body">Semua transliterasi berjalan di perangkat tanpa login.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how-it-works">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <h2 data-i18n="how_title">Cara kerjanya</h2>
+        <p data-i18n="how_subtitle">Tiga langkah dari teks Latin ke aksara Batak Toba.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal>
+          <span class="step-number">1</span>
+          <div>
+            <h3 data-i18n="how_step_one_title">Ketik bahasa Indonesia</h3>
+            <p data-i18n="how_step_one_body">Masukkan teks Latin di panel kiri — frasa, nama, atau paragraf penuh.</p>
+          </div>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step-number">2</span>
+          <div>
+            <h3 data-i18n="how_step_two_title">Transliterasi seketika</h3>
+            <p data-i18n="how_step_two_body">Mesin menerapkan aturan Batak, diakritik, dan angka secara real-time.</p>
+          </div>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step-number">3</span>
+          <div>
+            <h3 data-i18n="how_step_three_title">Salin dan bagikan</h3>
+            <p data-i18n="how_step_three_body">Salin output aksara atau tukar arah untuk mengubah kembali.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-strip" data-reveal>
+        <div>
+          <h3 data-i18n="cta_title">Untuk pelajar dan penutur aktif</h3>
+          <p data-i18n="cta_body">Gunakan untuk catatan, unggahan budaya, papan nama, dan pesan harian.</p>
+        </div>
+        <a class="btn primary" href="#download" data-i18n="cta_button">Unduh sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fonts" id="fonts">
+    <div class="container fonts-grid">
+      <div data-reveal>
+        <h2 data-i18n="fonts_title">Tipografi yang menghormati aksara</h2>
+        <p data-i18n="fonts_body">
+          Pilih dari banyak font Batak, termasuk Noto Sans Batak, Batak Unicode, Pangururan,
+          Kurinto, dan lainnya. Atur pergeseran glif otomatis atau manual untuk hasil terbaik.
+        </p>
+        <div class="font-tags">
+          <span class="tag" data-i18n="font_tag_one">Noto Sans Batak</span>
+          <span class="tag" data-i18n="font_tag_two">Batak Unicode</span>
+          <span class="tag" data-i18n="font_tag_three">Pangururan</span>
+          <span class="tag" data-i18n="font_tag_four">Kurinto</span>
+          <span class="tag" data-i18n="font_tag_five">Equator Petite</span>
+        </div>
+      </div>
+      <div class="font-card" data-reveal>
+        <p class="font-title" data-i18n="font_sample_title">Contoh Output</p>
+        <p class="font-sample" data-i18n="font_sample_text">ᮅᮥᮓᮥᮍᮀ ᮞᮀᮄᮑ</p>
+        <p class="font-caption" data-i18n="font_sample_caption">Lihat bagaimana aksara Batak tampil di berbagai font.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="learn" id="learn">
+    <div class="container learn-grid">
+      <div class="learn-card" data-reveal>
+        <h3 data-i18n="learn_card_title">Belajar aksara</h3>
+        <p data-i18n="learn_card_body">
+          Baca “Pustaha Pormanuhon Aji Tilih — Transliterasi dan Terjemahan Pustaha Warisan Siboro”
+          untuk memperdalam tradisi tulisan Batak Toba.
+        </p>
+        <span class="learn-meta" data-i18n="learn_card_meta">Tersedia di Google Play Books</span>
+      </div>
+      <div class="learn-copy" data-reveal>
+        <h2 data-i18n="learn_title">Hormati kisah di balik setiap huruf</h2>
+        <p data-i18n="learn_body">
+          Write Toba dibuat agar aksara Batak tetap hidup dan mudah dibaca. Baik Anda belajar maupun
+          sudah fasih, aplikasi ini membantu Anda konsisten, akurat, dan bangga dengan bahasa yang dibagikan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <p data-i18n="faq_subtitle">Jawaban untuk pertanyaan umum.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item" data-reveal>
+          <h3 data-i18n="faq_q1">Apakah bisa dipakai tanpa internet?</h3>
+          <p data-i18n="faq_a1">Bisa. Transliterasi berjalan sepenuhnya di perangkat, jadi tetap offline.</p>
+        </div>
+        <div class="faq-item" data-reveal>
+          <h3 data-i18n="faq_q2">Apakah bisa balik ke Latin?</h3>
+          <p data-i18n="faq_a2">Bisa. Tukar arah untuk mengubah aksara Batak ke karakter Latin.</p>
+        </div>
+        <div class="faq-item" data-reveal>
+          <h3 data-i18n="faq_q3">Bagaimana menangani huruf serapan Indonesia?</h3>
+          <p data-i18n="faq_a3">Mesin menerapkan substitusi yang baku dan aturan yang sesuai aksara Batak.</p>
+        </div>
+        <div class="faq-item" data-reveal>
+          <h3 data-i18n="faq_q4">Apakah gratis?</h3>
+          <p data-i18n="faq_a4">Write Toba tersedia di Android. Lihat detail terbaru di listing toko.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="container download-grid">
+      <div data-reveal>
+        <h2 data-i18n="download_title">Unduh Write Toba</h2>
+        <p data-i18n="download_body">Bawa aksara Batak Toba ke ponsel Anda. Cepat, fokus, dan menghormati budaya.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#download" data-i18n="download_primary">Dapatkan di Google Play</a>
+          <a class="btn ghost" href="#features" data-i18n="download_secondary">Lihat fitur</a>
+        </div>
+      </div>
+      <div class="download-card" data-reveal>
+        <div class="stat">
+          <h3 data-i18n="download_stat_one_title">Akurasi aksara</h3>
+          <p data-i18n="download_stat_one_body">Diakritik, angka, dan output yang mudah dibaca sudah siap.</p>
+        </div>
+        <div class="stat">
+          <h3 data-i18n="download_stat_two_title">Font kustom</h3>
+          <p data-i18n="download_stat_two_body">Ganti jenis huruf sesuai audiens dan gaya Anda.</p>
+        </div>
+        <div class="stat">
+          <h3 data-i18n="download_stat_three_title">Tanpa ribet</h3>
+          <p data-i18n="download_stat_three_body">Salin, tempel, dan tukar arah hanya dengan satu ketukan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 data-i18n="footer_title">Write Toba</h3>
+        <p data-i18n="footer_body">Transliterasi Indonesia ↔ Batak Toba untuk komunikasi modern.</p>
+      </div>
+      <div>
+        <p class="footer-title" data-i18n="footer_made">Dibuat oleh</p>
+        <p data-i18n="footer_institute">The Siboro Institute</p>
+      </div>
+      <div>
+        <p class="footer-title" data-i18n="footer_app">Aplikasi</p>
+        <p data-i18n="footer_meta">Android • Offline-first • Aksara akurat</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
