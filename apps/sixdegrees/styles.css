@@ -107,6 +107,12 @@ a {
   cursor: pointer;
 }
 
+.nav-lang {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -521,6 +527,10 @@ a {
 }
 
 @media (max-width: 720px) {
+  .nav-actions {
+    display: none;
+  }
+
   .nav-menu {
     position: absolute;
     right: 4%;
@@ -542,8 +552,7 @@ a {
     display: inline-flex;
   }
 
-  .nav-actions {
-    margin-left: 0;
-    margin-right: 0;
+  .nav-lang {
+    display: flex;
   }
 }

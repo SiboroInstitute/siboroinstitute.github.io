@@ -99,6 +99,12 @@ ul {
   background: transparent;
 }
 
+.nav-lang {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
 .hamburger {
   width: 24px;
   height: 2px;
@@ -549,8 +555,7 @@ section {
   }
 
   .nav-actions {
-    margin-left: 0;
-    margin-right: 0;
+    display: none;
   }
 
   .nav-menu {
@@ -573,6 +578,10 @@ section {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  .nav-lang {
+    display: flex;
   }
 
   .cta-strip {

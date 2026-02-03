@@ -1,6 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
-const langSelect = document.querySelector("#lang-select");
+const langSelects = document.querySelectorAll(".lang-select");
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
@@ -367,22 +367,22 @@ function applyTranslations(lang) {
     });
   });
 
-  if (langSelect) {
-    langSelect.value = lang;
-  }
+  langSelects.forEach((select) => {
+    select.value = lang;
+  });
 }
 
 const storedLang = localStorage.getItem("writetoba_lang");
 const defaultLang = storedLang || "id";
 applyTranslations(defaultLang);
 
-if (langSelect) {
-  langSelect.addEventListener("change", (event) => {
+langSelects.forEach((select) => {
+  select.addEventListener("change", (event) => {
     const selectedLang = event.target.value;
     localStorage.setItem("writetoba_lang", selectedLang);
     applyTranslations(selectedLang);
   });
-}
+});
 
 const revealItems = document.querySelectorAll("[data-reveal]");
 const observer = new IntersectionObserver(

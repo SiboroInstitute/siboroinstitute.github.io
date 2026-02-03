@@ -1,6 +1,6 @@
 const toggle = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.nav-menu');
-const langSelect = document.querySelector('#lang-select');
+const langSelects = document.querySelectorAll('.lang-select');
 const metaDescription = document.querySelector('meta[name="description"]');
 
 if (toggle && menu) {
@@ -476,19 +476,19 @@ function applyTranslations(lang) {
     });
   });
 
-  if (langSelect) {
-    langSelect.value = lang;
-  }
+  langSelects.forEach((select) => {
+    select.value = lang;
+  });
 }
 
 const storedLang = localStorage.getItem('sixdegrees_lang');
 const defaultLang = storedLang || 'en';
 applyTranslations(defaultLang);
 
-if (langSelect) {
-  langSelect.addEventListener('change', (event) => {
+langSelects.forEach((select) => {
+  select.addEventListener('change', (event) => {
     const selectedLang = event.target.value;
     localStorage.setItem('sixdegrees_lang', selectedLang);
     applyTranslations(selectedLang);
   });
-}
+});
